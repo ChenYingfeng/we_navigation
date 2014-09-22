@@ -1,0 +1,32 @@
+#[Topic and service Name]
+subPosename: robot_pose
+adVelName: cmd_vel
+opcServiceName: opc_service
+
+#[speed control]
+minVx: 0.02
+maxVx: 0.8
+minVy: 0.01
+maxVy: 0.1
+minVr: 0.01
+maxVr: 0.1
+
+#[charge point set]
+dx_in: 2.5
+dy_in: 2.0
+dx_out: 1.5
+dy_out: 2.0
+
+#100=1m 0.1m/s
+controlTimeUs: 100000
+backCount: 100
+forwardCount: 100
+adjustCount: 50
+
+#[corner point detect para]
+distCornerPoint: 4.17
+tolerateDist: 0.07
+linefitError: 0.005
+linefitAngle: 1.3089
+linefitR: 15
+linefitFilterR: 30
